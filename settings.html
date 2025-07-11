@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Настройки - SIT Academy</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+
+  <div class="settings-container">
+    <h2>Настройки</h2>
+    <form id="settingsForm">
+      
+      <label for="language">Език</label>
+      <select id="language" name="language">
+        <option value="bg">Български</option>
+        <option value="en">Английски</option>
+      </select>
+
+      <label for="location">Местоположение</label>
+      <select id="location" name="location">
+        <option value="bg">България</option>
+        <option value="us">САЩ</option>
+        <option value="de">Германия</option>
+        <option value="tr">Турция</option>
+      </select>
+
+      <label for="theme">Тема</label>
+      <select id="theme" name="theme">
+        <option value="light">Светла тема</option>
+        <option value="dark">Тъмна тема</option>
+      </select>
+
+      <button type="submit" class="btn-submit">Запази</button>
+    </form>
+
+    <a href="index2.html" class="back-link"><i class="fas fa-arrow-left"></i> Назад</a>
+  </div>
+
+  <script>
+    const themeSelect = document.getElementById('theme');
+    const body = document.body;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      body.className = savedTheme === 'dark' ? 'dark-theme' : 'light-theme';
+      themeSelect.value = savedTheme;
+    });
+
+    themeSelect.addEventListener('change', () => {
+      const selected = themeSelect.value;
+      if(selected === 'dark'){
+        body.className = 'dark-theme';
+      } else {
+        body.className = 'light-theme';
+      }
+    });
+
+    document.getElementById('settingsForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const lang = document.getElementById('language').value;
+      const loc = document.getElementById('location').value;
+      const theme = document.getElementById('theme').value;
+
+      localStorage.setItem('language', lang);
+      localStorage.setItem('location', loc);
+      localStorage.setItem('theme', theme);
+
+      alert('Настройките са запазени!');
+    });
+  </script>
+
+</body>
+</html>

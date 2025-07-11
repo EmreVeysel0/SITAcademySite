@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Профил</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <div class="background-decoration">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+  </div>
+
+  <div class="profile-container">
+    <div class="top-buttons">
+      <a href="index2.html" class="home-button">
+        <span>←</span> Начало
+      </a>
+      <button id="logoutBtn" class="logout-button">
+        <span>⚪</span> Изход
+      </button>
+    </div>
+
+    <div class="profile-header">
+      <div class="profile-avatar" id="profileAvatar"></div>
+      <div class="welcome-text">
+        Добре дошъл, <span id="userName"></span>!
+      </div>
+      <div class="user-role">Активен потребител</div>
+    </div>
+
+    <div class="user-info">
+      <div class="info-item">
+        <div class="info-label">
+          <span>👤</span> Име
+        </div>
+        <div class="info-value" id="displayName"></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">
+          <span>✉️</span> Имейл
+        </div>
+        <div class="info-value" id="displayEmail"></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">
+          <span>📅</span> Дата на регистрация
+        </div>
+        <div class="info-value" id="joinDate"></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">
+          <span>🔒</span> Статус на акаунта
+        </div>
+        <div class="info-value">Активен</div>
+      </div>
+    </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT Academy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <div class="particles" id="particles"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">SIT Academy</div>
+            <ul class="nav-links">
+                <li><a href="#home">Начало</a></li>
+                <li><a href="about.html">За нас</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+                <li><a href="#courses">Курсове</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="register.html" class="btn btn-secondary">Регистрация</a>
+                <a href="login.html" class="btn btn-primary">Вход</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">SIT ACADEMY</h1>
+            <p class="hero-subtitle">Технологията на бъдещето започва днес</p>
+            <div class="hero-buttons">
+                <a href="register.html" class="btn btn-primary btn-hero">Започнете сега</a>
+                <a href="about.html" class="btn btn-secondary btn-hero">Научете повече</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats animate-on-scroll">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number" data-target="5000">0</span>
+                <span class="stat-label">Студенти</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="150">0</span>
+                <span class="stat-label">Курсове</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Експерти</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="95">0</span>
+                <span class="stat-label">% Успех</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="features animate-on-scroll" id="courses">
+        <h2 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Наши Специалности</h2>
+        <div class="features-grid">
+            <div class="feature-card glass-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="feature-title">Програмиране</h3>
+                <p class="feature-description">Научете най-модерните езици за програмиране и технологии</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="feature-title">Изкуствен интелект</h3>
+                <p class="feature-description">Потопете се в света на машинното обучение и AI</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Киберсигурност</h3>
+                <p class="feature-description">Защитете дигиталния свят от кибер заплахи</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="feature-title">Мобилни приложения</h3>
+                <p class="feature-description">Създавайте иновативни мобилни решения</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3 class="feature-title">Бази данни</h3>
+                <p class="feature-description">Управлявайте и анализирайте големи количества данни</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="feature-title">Cloud Computing</h3>
+                <p class="feature-description">Изградете скалируеми cloud решения</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

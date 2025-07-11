@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Потребителски панел</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="top-button">
+      <a href="index.html" class="home-button">← Начало</a>
+    </div>
+    <h2>Свържете се с нас</h2>
+    <form class="dashboard-form" action="#" method="post">
+      <input type="text" name="firstname" placeholder="Име" required />
+      <input type="text" name="lastname" placeholder="Фамилия" required />
+      <input type="email" name="email" placeholder="Имейл адрес" required />
+      <input type="date" name="birthdate" required />
+
+      <select name="gender" required>
+        <option value="" disabled selected>Пол</option>
+        <option value="male">Мъж</option>
+        <option value="female">Жена</option>
+        <option value="other">Друг</option>
+      </select>
+
+      <textarea name="about" placeholder="Разкажете ни повече за себе си..." rows="4"></textarea>
+
+      <button type="submit">Запази</button>
+    </form>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>

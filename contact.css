@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+ 
+  .dashboard-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .dashboard-container h2 {
+    text-align: center;
+    color: #007acc;
+    margin-bottom: 25px;
+  }
+  
+ 
+  .dashboard-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .dashboard-form input,
+  .dashboard-form select,
+  .dashboard-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.3s;
+  }
+  
+  .dashboard-form input:focus,
+  .dashboard-form select:focus,
+  .dashboard-form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  
+ 
+  .dashboard-form button {
+    background-color: #007acc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-form button:hover {
+    background-color: #005f99;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .dashboard-container {
+      padding: 30px 20px;
+    }
+  }
+  .top-button {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .home-button {
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #005f99;
+  }
+  
+  

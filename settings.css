@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.4s, color 0.4s;
+    background: linear-gradient(to right, hsl(202, 89%, 51%), #dfe7e7);
+  }
+  
+  
+  .light-theme {
+    background: #e8f0fe;
+    color: #0d3b66;
+  }
+  
+  
+  .dark-theme {
+    background: #0d3b66;
+    color: #e8f0fe;
+  }
+  
+  .settings-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(13, 59, 102, 0.15);
+    max-width: 450px;
+    width: 100%;
+    padding: 30px 40px;
+    transition: background-color 0.4s, color 0.4s;
+  }
+  
+ 
+  .dark-theme .settings-container {
+    background: #12395a;
+    color: #e8f0fe;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: inherit;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: inherit;
+  }
+  
+  select {
+    padding: 12px 15px;
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 100%;
+    background: white;
+    color: #0d3b66;
+  }
+  
+  select:focus {
+    border-color: #0057b8;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 87, 184, 0.5);
+  }
+  
+  
+  .dark-theme select {
+    background: #12395a;
+    color: #e8f0fe;
+    border-color: #2b5d9e;
+  }
+  
+  .dark-theme select:focus {
+    border-color: #76a9ff;
+    box-shadow: 0 0 8px rgba(118, 169, 255, 0.6);
+  }
+  
+  .btn-submit {
+    background: #0077ff;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  .btn-submit:hover {
+    background: #005ecb;
+  }
+  
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
